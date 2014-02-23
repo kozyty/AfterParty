@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98D1928C8E43417AB5A84334 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11983DFB05984BFCA2CEAD50 /* libPods.a */; };
 		A2D5E59718B87E9100660A64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D5E59618B87E9100660A64 /* Foundation.framework */; };
 		A2D5E59918B87E9100660A64 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D5E59818B87E9100660A64 /* CoreGraphics.framework */; };
 		A2D5E59B18B87E9100660A64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D5E59A18B87E9100660A64 /* UIKit.framework */; };
@@ -21,6 +22,17 @@
 		A2D5E5B818B87E9200660A64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D5E59A18B87E9100660A64 /* UIKit.framework */; };
 		A2D5E5C018B87E9200660A64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2D5E5BE18B87E9200660A64 /* InfoPlist.strings */; };
 		A2D5E5C218B87E9200660A64 /* AfterPartyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D5E5C118B87E9200660A64 /* AfterPartyTests.m */; };
+		A2D5E5CE18B87F0300660A64 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D5E5CD18B87F0300660A64 /* CoreLocation.framework */; };
+		A2D5E5D018B87F1F00660A64 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D5E5CF18B87F1F00660A64 /* MapKit.framework */; };
+		A2D5E5D418B89F1F00660A64 /* NANetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D5E5D318B89F1F00660A64 /* NANetworkEngine.m */; };
+		A2D5E5D718B89FAE00660A64 /* NetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D5E5D618B89FAE00660A64 /* NetworkUtil.m */; };
+		A2D5E5DB18B8A2D000660A64 /* ShopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D5E5DA18B8A2D000660A64 /* ShopManager.m */; };
+		A2D5E5DF18B8A36E00660A64 /* APBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D5E5DE18B8A36E00660A64 /* APBaseModel.m */; };
+		A2D5E5E518B8B64300660A64 /* APShop.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D5E5E418B8B64300660A64 /* APShop.m */; };
+		A2D5E5E818B8F11C00660A64 /* XMLConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D5E5E718B8F11C00660A64 /* XMLConverter.m */; };
+		A2D5E5EB18B9003F00660A64 /* bk_60.png in Resources */ = {isa = PBXBuildFile; fileRef = A2D5E5EA18B9003F00660A64 /* bk_60.png */; };
+		A2D5E5EE18B90A1800660A64 /* CVCLCoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D5E5ED18B90A1800660A64 /* CVCLCoverFlowLayout.m */; };
+		A2D5E5F118B974BE00660A64 /* ShoCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D5E5F018B974BE00660A64 /* ShoCollectionCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11983DFB05984BFCA2CEAD50 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		59EF83BDF1E549C0A3DD4EC1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A2D5E59318B87E9100660A64 /* AfterParty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfterParty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D5E59618B87E9100660A64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A2D5E59818B87E9100660A64 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +67,27 @@
 		A2D5E5BD18B87E9200660A64 /* AfterPartyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AfterPartyTests-Info.plist"; sourceTree = "<group>"; };
 		A2D5E5BF18B87E9200660A64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A2D5E5C118B87E9200660A64 /* AfterPartyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AfterPartyTests.m; sourceTree = "<group>"; };
+		A2D5E5CB18B87ECA00660A64 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A2D5E5CD18B87F0300660A64 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A2D5E5CF18B87F1F00660A64 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A2D5E5D218B89F1F00660A64 /* NANetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NANetworkEngine.h; path = Util/NANetworkEngine.h; sourceTree = "<group>"; };
+		A2D5E5D318B89F1F00660A64 /* NANetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NANetworkEngine.m; path = Util/NANetworkEngine.m; sourceTree = "<group>"; };
+		A2D5E5D518B89FAE00660A64 /* NetworkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkUtil.h; path = Util/NetworkUtil.h; sourceTree = "<group>"; };
+		A2D5E5D618B89FAE00660A64 /* NetworkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkUtil.m; path = Util/NetworkUtil.m; sourceTree = "<group>"; };
+		A2D5E5D918B8A2D000660A64 /* ShopManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShopManager.h; path = Manager/ShopManager.h; sourceTree = "<group>"; };
+		A2D5E5DA18B8A2D000660A64 /* ShopManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShopManager.m; path = Manager/ShopManager.m; sourceTree = "<group>"; };
+		A2D5E5DD18B8A36E00660A64 /* APBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APBaseModel.h; path = Model/APBaseModel.h; sourceTree = "<group>"; };
+		A2D5E5DE18B8A36E00660A64 /* APBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APBaseModel.m; path = Model/APBaseModel.m; sourceTree = "<group>"; };
+		A2D5E5E018B8AF5500660A64 /* UserDefaultsKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDefaultsKeys.h; path = Model/UserDefaultsKeys.h; sourceTree = "<group>"; };
+		A2D5E5E318B8B64300660A64 /* APShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APShop.h; path = Model/APShop.h; sourceTree = "<group>"; };
+		A2D5E5E418B8B64300660A64 /* APShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APShop.m; path = Model/APShop.m; sourceTree = "<group>"; };
+		A2D5E5E618B8F11C00660A64 /* XMLConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLConverter.h; path = Util/XMLConverter.h; sourceTree = "<group>"; };
+		A2D5E5E718B8F11C00660A64 /* XMLConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLConverter.m; path = Util/XMLConverter.m; sourceTree = "<group>"; };
+		A2D5E5EA18B9003F00660A64 /* bk_60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk_60.png; sourceTree = "<group>"; };
+		A2D5E5EC18B90A1800660A64 /* CVCLCoverFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CVCLCoverFlowLayout.h; path = Util/CVCLCoverFlowLayout.h; sourceTree = "<group>"; };
+		A2D5E5ED18B90A1800660A64 /* CVCLCoverFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CVCLCoverFlowLayout.m; path = Util/CVCLCoverFlowLayout.m; sourceTree = "<group>"; };
+		A2D5E5EF18B974BE00660A64 /* ShoCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoCollectionCell.h; path = View/ShoCollectionCell.h; sourceTree = "<group>"; };
+		A2D5E5F018B974BE00660A64 /* ShoCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoCollectionCell.m; path = View/ShoCollectionCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +95,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2D5E5D018B87F1F00660A64 /* MapKit.framework in Frameworks */,
+				A2D5E5CE18B87F0300660A64 /* CoreLocation.framework in Frameworks */,
 				A2D5E59918B87E9100660A64 /* CoreGraphics.framework in Frameworks */,
 				A2D5E59B18B87E9100660A64 /* UIKit.framework in Frameworks */,
 				A2D5E59718B87E9100660A64 /* Foundation.framework in Frameworks */,
+				98D1928C8E43417AB5A84334 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +124,7 @@
 				A2D5E5BB18B87E9200660A64 /* AfterPartyTests */,
 				A2D5E59518B87E9100660A64 /* Frameworks */,
 				A2D5E59418B87E9100660A64 /* Products */,
+				59EF83BDF1E549C0A3DD4EC1 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +140,14 @@
 		A2D5E59518B87E9100660A64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2D5E5CF18B87F1F00660A64 /* MapKit.framework */,
+				A2D5E5CD18B87F0300660A64 /* CoreLocation.framework */,
+				A2D5E5CB18B87ECA00660A64 /* CoreData.framework */,
 				A2D5E59618B87E9100660A64 /* Foundation.framework */,
 				A2D5E59818B87E9100660A64 /* CoreGraphics.framework */,
 				A2D5E59A18B87E9100660A64 /* UIKit.framework */,
 				A2D5E5B518B87E9200660A64 /* XCTest.framework */,
+				11983DFB05984BFCA2CEAD50 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,6 +155,12 @@
 		A2D5E59C18B87E9100660A64 /* AfterParty */ = {
 			isa = PBXGroup;
 			children = (
+				A2D5E5EF18B974BE00660A64 /* ShoCollectionCell.h */,
+				A2D5E5F018B974BE00660A64 /* ShoCollectionCell.m */,
+				A2D5E5E918B9002600660A64 /* Image */,
+				A2D5E5DC18B8A34900660A64 /* Model */,
+				A2D5E5D818B8A2A700660A64 /* Manager */,
+				A2D5E5D118B89EF000660A64 /* Util */,
 				A2D5E5A518B87E9100660A64 /* APAppDelegate.h */,
 				A2D5E5A618B87E9100660A64 /* APAppDelegate.m */,
 				A2D5E5A818B87E9100660A64 /* Main.storyboard */,
@@ -152,6 +201,50 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A2D5E5D118B89EF000660A64 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A2D5E5EC18B90A1800660A64 /* CVCLCoverFlowLayout.h */,
+				A2D5E5ED18B90A1800660A64 /* CVCLCoverFlowLayout.m */,
+				A2D5E5E618B8F11C00660A64 /* XMLConverter.h */,
+				A2D5E5E718B8F11C00660A64 /* XMLConverter.m */,
+				A2D5E5D218B89F1F00660A64 /* NANetworkEngine.h */,
+				A2D5E5D318B89F1F00660A64 /* NANetworkEngine.m */,
+				A2D5E5D518B89FAE00660A64 /* NetworkUtil.h */,
+				A2D5E5D618B89FAE00660A64 /* NetworkUtil.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		A2D5E5D818B8A2A700660A64 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A2D5E5D918B8A2D000660A64 /* ShopManager.h */,
+				A2D5E5DA18B8A2D000660A64 /* ShopManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		A2D5E5DC18B8A34900660A64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2D5E5DD18B8A36E00660A64 /* APBaseModel.h */,
+				A2D5E5DE18B8A36E00660A64 /* APBaseModel.m */,
+				A2D5E5E018B8AF5500660A64 /* UserDefaultsKeys.h */,
+				A2D5E5E318B8B64300660A64 /* APShop.h */,
+				A2D5E5E418B8B64300660A64 /* APShop.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A2D5E5E918B9002600660A64 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				A2D5E5EA18B9003F00660A64 /* bk_60.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2D5E5C518B87E9200660A64 /* Build configuration list for PBXNativeTarget "AfterParty" */;
 			buildPhases = (
+				17481AC07AEF49C382AED521 /* Check Pods Manifest.lock */,
 				A2D5E58F18B87E9100660A64 /* Sources */,
 				A2D5E59018B87E9100660A64 /* Frameworks */,
 				A2D5E59118B87E9100660A64 /* Resources */,
+				8418205D175A46D6AB188215 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +326,7 @@
 			files = (
 				A2D5E5AF18B87E9100660A64 /* Images.xcassets in Resources */,
 				A2D5E5A118B87E9100660A64 /* InfoPlist.strings in Resources */,
+				A2D5E5EB18B9003F00660A64 /* bk_60.png in Resources */,
 				A2D5E5AA18B87E9100660A64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,14 +341,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17481AC07AEF49C382AED521 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8418205D175A46D6AB188215 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A2D5E58F18B87E9100660A64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A2D5E5A318B87E9100660A64 /* main.m in Sources */,
+				A2D5E5E818B8F11C00660A64 /* XMLConverter.m in Sources */,
+				A2D5E5D718B89FAE00660A64 /* NetworkUtil.m in Sources */,
+				A2D5E5EE18B90A1800660A64 /* CVCLCoverFlowLayout.m in Sources */,
+				A2D5E5DB18B8A2D000660A64 /* ShopManager.m in Sources */,
 				A2D5E5AD18B87E9100660A64 /* APViewController.m in Sources */,
+				A2D5E5F118B974BE00660A64 /* ShoCollectionCell.m in Sources */,
 				A2D5E5A718B87E9100660A64 /* APAppDelegate.m in Sources */,
+				A2D5E5DF18B8A36E00660A64 /* APBaseModel.m in Sources */,
+				A2D5E5E518B8B64300660A64 /* APShop.m in Sources */,
+				A2D5E5D418B89F1F00660A64 /* NANetworkEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,9 +513,11 @@
 		};
 		A2D5E5C618B87E9200660A64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59EF83BDF1E549C0A3DD4EC1 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AfterParty/AfterParty-Prefix.pch";
 				INFOPLIST_FILE = "AfterParty/AfterParty-Info.plist";
@@ -389,9 +528,11 @@
 		};
 		A2D5E5C718B87E9200660A64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59EF83BDF1E549C0A3DD4EC1 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AfterParty/AfterParty-Prefix.pch";
 				INFOPLIST_FILE = "AfterParty/AfterParty-Info.plist";
@@ -461,6 +602,7 @@
 				A2D5E5C718B87E9200660A64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2D5E5C818B87E9200660A64 /* Build configuration list for PBXNativeTarget "AfterPartyTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +611,7 @@
 				A2D5E5CA18B87E9200660A64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

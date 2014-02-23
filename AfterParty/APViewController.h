@@ -6,8 +6,36 @@
 //  Copyright (c) 2014年 kozyty. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@interface APViewController : UIViewController <CLLocationManagerDelegate, UICollectionViewDelegate> {
+    CLLocationManager *locationManager;
+    int apiRange;
+    double zoom_lv;
+    double lastLatitude;
+    double lastLongitude;
+}
 
-@interface APViewController : UIViewController
+/// マップ
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+
+/// 横スクロールコレクションビュー
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+/// コレクションビューセル
+@property (weak, nonatomic) IBOutlet UICollectionViewCell *collectionViewCell;
+
+/// 右スライドボタン
+@property (weak, nonatomic) IBOutlet UIButton *rightSlideButton;
+
+/// 左スライドボタン
+@property (weak, nonatomic) IBOutlet UIButton *leftSlideButton;
+
+/// お店一覧
+@property (strong, nonatomic) NSMutableArray *shops;
+
+@property (assign, nonatomic) BOOL isUpdate;
+
+/// ボタンクリックアクション
+- (IBAction)onClickButton:(id)sender;
+
 
 @end
