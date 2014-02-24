@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 kozyty. All rights reserved.
 //
 
-@interface APViewController : UIViewController <CLLocationManagerDelegate, UICollectionViewDelegate> {
+@interface APViewController : UIViewController <CLLocationManagerDelegate, UICollectionViewDelegate, UICollectionViewDataSource> {
     CLLocationManager *locationManager;
     int apiRange;
     double zoom_lv;
@@ -22,6 +22,9 @@
 
 /// コレクションビューセル
 @property (weak, nonatomic) IBOutlet UICollectionViewCell *collectionViewCell;
+
+/// 絞込ボタン
+@property (weak, nonatomic) IBOutlet UIButton *filterButton;
 
 /// 右スライドボタン
 @property (weak, nonatomic) IBOutlet UIButton *rightSlideButton;

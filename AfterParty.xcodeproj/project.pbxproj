@@ -33,6 +33,7 @@
 		A2D5E5EB18B9003F00660A64 /* bk_60.png in Resources */ = {isa = PBXBuildFile; fileRef = A2D5E5EA18B9003F00660A64 /* bk_60.png */; };
 		A2D5E5EE18B90A1800660A64 /* CVCLCoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D5E5ED18B90A1800660A64 /* CVCLCoverFlowLayout.m */; };
 		A2D5E5F118B974BE00660A64 /* ShoCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D5E5F018B974BE00660A64 /* ShoCollectionCell.m */; };
+		A2D5E5F418B98A8800660A64 /* APShopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D5E5F318B98A8800660A64 /* APShopDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		A2D5E5ED18B90A1800660A64 /* CVCLCoverFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CVCLCoverFlowLayout.m; path = Util/CVCLCoverFlowLayout.m; sourceTree = "<group>"; };
 		A2D5E5EF18B974BE00660A64 /* ShoCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoCollectionCell.h; path = View/ShoCollectionCell.h; sourceTree = "<group>"; };
 		A2D5E5F018B974BE00660A64 /* ShoCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoCollectionCell.m; path = View/ShoCollectionCell.m; sourceTree = "<group>"; };
+		A2D5E5F218B98A8800660A64 /* APShopDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APShopDetailViewController.h; sourceTree = "<group>"; };
+		A2D5E5F318B98A8800660A64 /* APShopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APShopDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,8 @@
 		A2D5E59C18B87E9100660A64 /* AfterParty */ = {
 			isa = PBXGroup;
 			children = (
+				A2D5E5F218B98A8800660A64 /* APShopDetailViewController.h */,
+				A2D5E5F318B98A8800660A64 /* APShopDetailViewController.m */,
 				A2D5E5EF18B974BE00660A64 /* ShoCollectionCell.h */,
 				A2D5E5F018B974BE00660A64 /* ShoCollectionCell.m */,
 				A2D5E5E918B9002600660A64 /* Image */,
@@ -387,6 +392,7 @@
 				A2D5E5AD18B87E9100660A64 /* APViewController.m in Sources */,
 				A2D5E5F118B974BE00660A64 /* ShoCollectionCell.m in Sources */,
 				A2D5E5A718B87E9100660A64 /* APAppDelegate.m in Sources */,
+				A2D5E5F418B98A8800660A64 /* APShopDetailViewController.m in Sources */,
 				A2D5E5DF18B8A36E00660A64 /* APBaseModel.m in Sources */,
 				A2D5E5E518B8B64300660A64 /* APShop.m in Sources */,
 				A2D5E5D418B89F1F00660A64 /* NANetworkEngine.m in Sources */,

@@ -12,6 +12,7 @@
 #define kKeyOpen                        @"open"
 #define kKeyPartyCapacity               @"partyCapacity"
 #define kKeyFreeDrink                   @"freeDrink"
+#define kKeyNonSmoking                  @"nonSmoking"
 #define kKeyUrl                         @"url"
 #define kKeyImage                       @"image"
 
@@ -25,6 +26,7 @@
         self.open = [self objectWithDictionary:dict  key:kKeyOpen];
         self.partyCapacity = [self objectWithDictionary:dict  key:kKeyPartyCapacity];
         self.freeDrink = [self objectWithDictionary:dict  key:kKeyFreeDrink];
+        self.nonSmoking = [self objectWithDictionary:dict  key:kKeyNonSmoking];
         self.url = [self objectWithDictionary:dict  key:kKeyUrl];
         self.image = [self objectWithDictionary:dict  key:kKeyImage];
     }

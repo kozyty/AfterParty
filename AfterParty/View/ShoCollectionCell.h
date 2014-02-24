@@ -13,8 +13,6 @@
 /// 背景画像
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
-/// 絞込ボタン
-@property (weak, nonatomic) IBOutlet UIButton *filterButton;
 
 /// webViewボタン
 @property (weak, nonatomic) IBOutlet UIButton *webButton;
@@ -33,6 +31,12 @@
 
 /// カラオケラベル
 @property (weak, nonatomic) IBOutlet UILabel *karaokeLabel;
+
+/// 禁煙席
+@property (weak, nonatomic) IBOutlet UILabel *nonSmokingLabel;
+
+/// webUrl
+@property (strong, nonatomic) NSString *url;
 
 - (IBAction)onClickButton:(id)sender;
 @end

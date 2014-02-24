@@ -22,6 +22,9 @@
 /// 飲み放題
 @property (strong, nonatomic) NSString *freeDrink;
 
+/// 禁煙席
+@property (strong, nonatomic) NSString *nonSmoking;
+
 /// サイトURL
 @property (strong, nonatomic) NSString *url;
 

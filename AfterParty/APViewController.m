@@ -14,6 +14,7 @@
 #import "ShoCollectionCell.h"
 #import "XMLConverter.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "APShopDetailViewController.h"
 
 @interface APViewController ()
 
@@ -24,6 +25,8 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
+    [self.collectionView reloadItemsAtIndexPaths:[self.collectionView indexPathsForVisibleItems]];
+    [self.collectionView reloadData];
 }
 
 - (void)viewDidLoad
@@ -74,7 +77,7 @@
         MKNetworkOperation *op = [[NANetworkEngine sharedEngine] operationWithPath:@"" params:params];
         
         MKNKResponseBlock completionHandler = ^(MKNetworkOperation *op) {
-            NSLog(@"%@, %ld, %@", op.url, op.HTTPStatusCode, op.responseString);
+            NSLog(@"%@, %ld", op.url, op.HTTPStatusCode);
             if (op.HTTPStatusCode == 200) {
                 [XMLConverter convertXMLData:op.responseData completion:^(BOOL success, NSMutableDictionary *dictionary, NSError *error) {
                     NSDictionary *results = [dictionary valueForKey:@"Results"];
@@ -93,6 +96,8 @@
                         [apShops addObject:apShop];
                     }
                     self.shops = apShops;
+//                    [self.collectionView reloadItemsAtIndexPaths:[self.collectionView indexPathsForVisibleItems]];
+                    [self.collectionView reloadData];
                 }];
             }
         };
@@ -120,25 +125,17 @@
         
         self.isUpdate = NO;
     }
-    
-//    if (self.shops) {
-//        APShop *lastShop = [self.shops lastObject];
-//        self.nameLabel.text = lastShop.name;
-//        self.openLabel.text = lastShop.open;
-//        self.capacityLabel.text = lastShop.partyCapacity;
-//        self.freeDrinkLabel.text = lastShop.freeDrink;
-//        [self.imageView setImageWithURL:[NSURL URLWithString:lastShop.image]];
-//    }
 }
 
-#pragma mark - UICollectionViewDelegate
+#pragma mark - UICollectionViewDataSource
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView*)collectionView {
-    return [self.shops count];
+    return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView*)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 1;
+    NSLog(@"shop count : %ld", [self.shops count]);
+    return [self.shops count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
@@ -150,41 +147,33 @@
         APShop *shop = [self.shops objectAtIndex:indexPath.row];
         cell.nameLabel.text = shop.name;
         cell.openLabel.text = shop.open;
-        cell.capacityLabel.text = shop.partyCapacity;
-        cell.freeDrinkLabel.text = shop.freeDrink;
+        cell.capacityLabel.text = [NSString stringWithFormat:@"席数 : %@", shop.partyCapacity];
+        BOOL isFreeDrink = [shop.freeDrink isEqualToString:@"あり"];
+        cell.freeDrinkLabel.hidden = isFreeDrink;
+        BOOL isNonSmorking = [shop.freeDrink isEqualToString:@"あり"];
+        cell.nonSmokingLabel.hidden = isNonSmorking;
+        cell.url = shop.url;
         [cell.imageView setImageWithURL:[NSURL URLWithString:shop.image]];
-
     }
 
     return cell;
 }
 
+#pragma mark - UICollectionViewDelegate
+
+
+#pragma mark - original
+
 - (IBAction)onClickButton:(id)sender {
-//    UISegmentedControl *control = sender;
-//    switch (control.selectedSegmentIndex) {
-//        case 0:
-//            zoom_lv = 0.005f;
-//            break;
-//        case 1 :
-//            zoom_lv = 0.05f;
-//            break;
-//        case 2:
-//            zoom_lv = 0.5f;
-//            break;
-//        case 3:
-//            zoom_lv = 1.0f;
-//            break;
-//    }
-//    
-//    MKCoordinateRegion region = self.mapView.region;
-//    
-//    region.center.latitude = lastLatitude;
-//    region.center.longitude = lastLongitude;
-//    
-//    region.span.latitudeDelta = zoom_lv;
-//    region.span.longitudeDelta = zoom_lv;
-//    
-//    [self.mapView setRegion:region animated:YES];
+
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    ShoCollectionCell *cell = (ShoCollectionCell *)sender;
+    NSString *urlStr = cell.url;
+    APShopDetailViewController *controller = [segue destinationViewController];
+    controller.urlStr = urlStr;
 }
 
 @end
